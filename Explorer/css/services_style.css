@@ -59,6 +59,10 @@ nav{
     display: block;   
 }
 
+header > nav > ul.nav_principal > li:nth-child(2) >a{
+    opacity: .5;
+}
+
 main > div{
     width: 50%;
     margin: 30px auto;
@@ -190,12 +194,6 @@ footer > ul.media{
         padding-bottom: 15px;
     }
     
-    nav > div.nav_media > p:nth-child(2){
-        color: #f2f2f2;
-        opacity: .5;
-        
-    }
-    
     nav > div.nav_media > p:nth-child(3){
         margin-top: 40px;
         color: #f2f2f2;
@@ -294,9 +292,6 @@ footer > ul.media{
     header > nav > ul.nav_principal > li{
         padding: 10px 15px;
     }
-    header > nav > ul.nav_principal > li:nth-child(2) >a{
-        opacity: .5;
-    }
 
     nav > div.nav_media{
         display: none;
@@ -379,9 +374,6 @@ footer > ul.media{
     header > nav > ul.nav_principal > li{
         padding: 10px 15px;
     }
-    header > nav > ul.nav_principal > li:nth-child(2) >a{
-        opacity: .5;
-    }
 
     nav > div.nav_media{
         display: none;
@@ -421,7 +413,11 @@ footer > ul.media{
         display: block;
         width: 30px;
         float: left;
-        margin: 0 15px 30% 0;
+        margin: 0 15px 40% 0;
+    }
+ 
+    main > section.container_more_services > div:nth-child(4):before{
+        margin-bottom:52%;
     }
 
     footer{
