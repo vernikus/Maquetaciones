@@ -283,15 +283,15 @@ footer > ul.media{
 
   
     footer{
-        margin: 20px 15px ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-left: 15px;
     }
 
-    footer > ul > li{
-        width: 40px;
-        margin-right: 10px;
+    footer > ul.media > li{
+        width: 22px;
+        margin: 10px;
+    }
+    footer > ul.media > li:first-child{
+        margin: 10px 10px 10px 0;
     }
 }
 
