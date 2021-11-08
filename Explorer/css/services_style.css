@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel';
+    /* #5068A9 */
+    color: #020202;
+    
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+header > div > a{
+    font-size: 20px;
+    color: #5068A9;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header > div >#btn_menu{
+    display: none;
+    
+}
+
+nav{
+    display: flex;
+}
+    ul >li > a{
+    color: #5068A9;
+}
+
+    ul.media > li:nth-child(1) > a > i::before{
+    content: url(../Media/icons/facebook.svg);
+    display: block;   
+}
+    ul.media > li:nth-child(2) > a > i::before{
+    content: url(../Media/icons/twitter.svg);
+    display: block;   
+}
+    ul.media > li:nth-child(3) > a > i::before{
+    content: url(../Media/icons/intagram.svg);
+    display: block;   
+}
+    ul.media > li:nth-child(4) > a > i::before{
+    content: url(../Media/icons/linkedin.svg);
+    display: block;   
+}
+
+main > div{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+main > section.container_bussines > div:nth-child(1)::before{
+    content: url(../Media/icons/laptop.svg);
+}
+main > section.container_bussines > div:nth-child(2)::before{
+    content: url(../Media/icons/wallet.svg);
+}
+main > section.container_bussines > div:nth-child(3)::before{
+    content: url(../Media/icons/presentation.svg);
+}
+
+main > section.container_more_services > div:nth-child(1)::before{
+    content: url(../Media/icons/laptop.svg);
+}
+main > section.container_more_services > div:nth-child(2)::before{
+    content: url(../Media/icons/presentation.svg);
+}
+main > section.container_more_services > div:nth-child(3)::before{
+    content: url(../Media/icons/wallet.svg);
+}
+main > section.container_more_services > div:nth-child(4)::before{
+    content: url(../Media/icons/hourglass.svg);
+}
+main > section.container_more_services > div:nth-child(5)::before{
+    content: url(../Media/icons/shield.svg);
+}
+main > section.container_more_services > div:nth-child(6)::before{
+    content: url(../Media/icons/adjusment.svg);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 10px;
+} 
+
+section > div {
+    width: 100%;
+}
+
+section  h2 , section  h3 , section h4 , section h5 , section h6 {
+    opacity: .5;
+}
+
+
+footer{
+    margin: 20px 0 0 8px;
+}
+
+footer > p{
+    opacity: .5;
+}
+
+footer > p > a{
+    color: #5068A9;
+    font-weight: bold;
+    
+}
+
+footer > ul.media{
+    display: flex;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        overflow: hidden;
+    }
+  
+    header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header > div > a{
+        padding: 10px;
+    }
+    
+    header > div >label{
+        cursor: pointer;
+        padding: 10px;
+       
+    }
+    header > div > label::before{
+        content: url(../Media/icons/hamburguer.svg);
+        display: block;
+        width: 50px;
+      
+    }
+    
+    nav{
+        /*  */
+        /*  */
+        display: none;
+        /*  */
+        /*  */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #020202;
+        width: 60%;
+        margin-right: -60%;
+    }
+    
+    nav > ul{
+        margin-top: 20px;
+    }
+
+    nav > ul > li{
+        margin: 0 0 20px 20px;
+    }
+
+    
+    nav > div.nav_media{
+        margin: 20px 0 20px 20px;
+    }
+    
+    nav > div.nav_media > p:nth-child(1){
+        color: #f2f2f2;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+    
+    nav > div.nav_media > p:nth-child(2){
+        color: #f2f2f2;
+        opacity: .5;
+        
+    }
+    
+    nav > div.nav_media > p:nth-child(3){
+        margin-top: 40px;
+        color: #f2f2f2;
+        font-weight: bold;
+    }
+    nav > div.nav_media > ul{
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    nav > div.nav_media > ul > li{
+        margin-left: 15px;
+        width: 25px;
+    }
+    
+    nav > div.nav_media > ul > li:nth-child(1){
+        margin: 0;
+    }
+    
+    main > div{
+        width: auto;
+        margin:20px 15px;
+        box-sizing: content-box;
+    }
+    main > section.container_bussines, main > section.container_more_services {
+        width: auto;
+        margin: 0 15px;
+        box-sizing: content-box;
+    }
+
+    main > section.container_bussines{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-gap: 15px;
+    }
+    
+    main > section.container_bussines > div::before{
+        display: none;
+    }
+    main > section.container_bussines > div:nth-child(1)::after{
+        content: url(../Media/icons/laptop.svg);
+    }
+    main > section.container_bussines > div:nth-child(2)::after{
+        content: url(../Media/icons/wallet.svg);
+        margin-top: 20px;
+    }
+    main > section.container_bussines > div:nth-child(3)::after{
+        content: url(../Media/icons/presentation.svg);
+        margin-top: 25px;
+        
+    }
+    main > section.container_bussines > div::after,main > section.container_more_services > div::after{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+
+    main > section.container_more_services{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-gap: 15px;
+    }
+
+    main > section.container_more_services >h5{
+        color: #020202;
+        padding: 50px 0 35px 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    main > section.container_more_services > div::before{
+        display: none;
+    }
+    
+    main > section.container_more_services > div:nth-child(2):after{
+        content: url(../Media/icons/laptop.svg);
+    }
+    main > section.container_more_services > div:nth-child(3):after{
+        content: url(../Media/icons/presentation.svg);
+        margin: 30px auto 15px auto;
+    }
+    main > section.container_more_services > div:nth-child(4):after{
+        content: url(../Media/icons/wallet.svg);
+        margin: 30px auto 15px auto;
+    }
+    main > section.container_more_services > div:nth-child(5):after{
+        content: url(../Media/icons/hourglass.svg);
+        margin: 30px auto 15px auto;
+    }
+    main > section.container_more_services > div:nth-child(6):after{
+        content: url(../Media/icons/shield.svg);
+        margin: 30px auto 15px auto;
+    }
+    main > section.container_more_services > div:nth-child(7):after{
+        content: url(../Media/icons/adjusment.svg);
+        margin: 30px auto 15px auto;
+    }
+    
+    
+    footer > ul.media > li{
+        width: 22px;
+        margin: 10px;
+    }
+    footer > ul.media > li:first-child{
+        margin: 10px 10px 10px 0;
+    }
+}
