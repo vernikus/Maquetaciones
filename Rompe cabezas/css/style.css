@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: coral;
+}
+
+main{
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+main section.container_jigSaw{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-size: cover;
+}
+main section.container_img{ 
+    position: relative;
+}
+main section.container_img div{
+    position: absolute;
+}
+
+main > section.container_img > div#img0,main div#img0{
+    background-image: url(../media/img/esquinaSuperiorIzquierda.jpg);
+    background-size: cover;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img3,main div#img3{
+    background-image: url(../media/img/medio1.jpg);
+    background-size: cover;
+    margin-left: 4px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img6,main div#img6{
+    background-image: url(../media/img/esquinaInferiorIzquierda.jpg);
+    background-size: cover;
+    margin-left: 8px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img1,main div#img1{
+    background-image: url(../media/img/medioSuperior.jpg);
+    background-size: cover;
+    margin-left: 12px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img >  div#img4,main div#img4{
+    background-image: url(../media/img/medio2.jpg);
+    background-size: cover;
+    margin-left: 16px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img7,main div#img7{
+    background-image: url(../media/img/medioInferior.jpg);
+    background-size: cover;
+    margin-left: 20px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img2,main div#img2{
+    background-image: url(../media/img/esquienaSuperiorDerecha.jpg);
+    background-size: cover;
+    margin-left: 24px;
+    width: 312px;
+    height: 312px;
+}
+main > section.container_img > div#img5,main div#img5{
+    background-image: url(../media/img/medio3.jpg);
+    background-size: cover;
+    margin-left: 28px;
+    width: 312px;
+    height: 312px;
+} 
+main > section.container_img > div#img8,main div#img8{
+    background-image: url(../media/img/esquinaInferiorDerecha.jpg);
+    background-size: cover;
+    margin-left: 32px;
+    width: 312px;
+    height: 312px;
+
+}
+
+main button{
+    position: absolute;
+    top: 7.5px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+main button:nth-child(3){
+    right: 532px;
+}
+main button:nth-child(4){
+    padding: 10px 28.2px;
+    left: 566px;
+
+}
+
+main button:hover{
+    cursor: pointer;
+}
+
+/* main button {
+
+} */
