@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    margin: 15px 30px;
+    background-color: #c68fe7;
+    padding: 10px;
+}
+#title{
+    text-align: center;
+    font-size: 30px;
+}
+
+#sub-title{
+    text-align: center;
+    font-size: 22px;
+    margin:10px 0;
+}
+
+#img-div{
+    width: 100%;
+    display: flex;
+  flex-direction:column;
+    align-items: center;
+}
+#image{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    object-fit: cover;
+}
+#img-caption{
+  text-align:center;
+  font-family:22px;
+  margin:10px 0;
+}
+section p{
+  margin:10px 0;
+  
+}
+section> h2> a{
+  color:#f6b8a2;
+}

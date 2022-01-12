@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: coral;
+}
+main > form{
+    width: 60%;
+    display: flex;
+    margin: 50px auto 0 ;
+    justify-content: space-between;
+}
+main > form >input:nth-child(1){
+    width: 85%; 
+    padding: 0 20px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+}
+
+main > form > input:nth-child(2){
+    height: 50px;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+}
+
+main > form > input:nth-child(2):hover{
+    background: #53E68A;
+    cursor: pointer;
+    border: 2px solid #020202;
+}
+
+main > ul{
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #020202;
+}
+
+main > ul > li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5E5EE6;
+    border-bottom: 1px solid #020202;
+    align-items: center;
+}
+main > ul > li > p{
+    padding: 10px 0;
+    width: 85%;
+    padding: 10px;
+}
+main > ul > li > input{
+    border: none;
+    width: 15%;
+    height: 38px;
+    
+}
+
+main > ul > li > input:hover{
+    border: 2px solid #020202;
+
+    background: #ef3c3c;
+}
+
+main > ul > li:last-child{
+    border: none;
+}
+
+
+main > ul > li.animationDelete,main ul > li.animationDelete > input{
+    animation: delete 1.5s linear 0s;
+}
+
+@keyframes delete{
+    0%{background-color: aliceblue;}
+    0%{opacity: 1;}
+    50%{opacity: .5;}
+    100%{opacity: 0;}
+}
+@media screen and (min-width:0px) and (max-width:900px) {
+    main > form > input:nth-child(1){
+        width: 70%;
+    }
+  
+    main > form > input:nth-child(2),main > ul > li > input{
+      width: 30%;
+  }
+}

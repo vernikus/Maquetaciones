@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Encuesta para mejorar el contenido</h1>
+          <p id="description" class="description text-center">
+            Gracias por ayudarno a saber en que podemos mejorar
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Escribe tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Escribe tu Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Edad<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Edad"
+            />
+          </div>
+          <div class="form-group">
+            <p>Escoje la opcion que mejor te describa</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Ocupacion</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="empresa">Dev en empresa</option>
+              <option value="freelance">Dev Freelance</option>
+              <option value="autodidacta">Aprendiendo de forma auotdidacta</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>¿Recomendarias nuestros cursos?</p>
+            <label>
+              <input
+                name="recomendacion-usuario"
+                value="si"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitivamente sí</label
+            >
+            <label>
+              <input
+                name="recomendacion-usuario"
+                value="tal vez"
+                type="radio"
+                class="input-radio"
+              />Tal vez</label
+            >
+      
+            <label
+              ><input
+                name="recomendacion-usuario"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />Definitivamente no</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿Que te gustaria ver en la plataforma en un futuro?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Seleciona una opcion</option>
+              <option value="challenges">Challenges</option>
+              <option value="proyectos">Proyectos</option>
+              <option value="comunidad">Comunidad</option>
+              <option value="talleres">Talleres</option>
+              <option value="charlas">Charlas</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿De que lenguaje quisieras que hagamos un curso?
+              <span class="clue">(Marca cuantas quieras)</span>
+            </p>
+      
+            <label
+              ><input
+                name="lenguaje"
+                value="js"
+                type="checkbox"
+                class="input-checkbox"
+              />js</label
+            >
+            <label>
+              <input
+                name="lenguaje"
+                value="nodeJs"
+                type="checkbox"
+                class="input-checkbox"
+              />nodeJs</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="c++"
+                type="checkbox"
+                class="input-checkbox"
+              />c++</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="c#"
+                type="checkbox"
+                class="input-checkbox"
+              />c#</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="java"
+                type="checkbox"
+                class="input-checkbox"
+              />java</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="php"
+                type="checkbox"
+                class="input-checkbox"
+              />php</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value=".net"
+                type="checkbox"
+                class="input-checkbox"
+              />.Net</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="ensamblador"
+                type="checkbox"
+                class="input-checkbox"
+              />ensamblador</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="R"
+                type="checkbox"
+                class="input-checkbox"
+              />R</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="SQL"
+                type="checkbox"
+                class="input-checkbox"
+              />SQL</label
+            >
+            <label
+              ><input
+                name="lenguaje"
+                value="objective-C"
+                type="checkbox"
+                class="input-checkbox"
+              />Objective-C</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Comentarios o sugerencias</p>
+            <textarea
+              id="comentarios"
+              class="input-textarea"
+              name="comment"
+              placeholder="Escribe tu comentario"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </main>
+      
+</body>
+</html>

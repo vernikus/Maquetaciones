@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>JS Documentation</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+            <li><a class="nav-link" href="#¿Qué_necesitas_para_empezar_con_css?">¿Qué necesitas para empezar con css?</a></li>
+            <li><a class="nav-link" href="#Selectores">Selectores</a></li>
+            <li><a class="nav-link" href="#Modelo_de_cajas">Modelo de cajas</a></li>
+            <li><a class="nav-link" href="#Fondos">Fondos</a></li>
+            <li><a class="nav-link" href="#Imagenes_como_fondos">Imagenes como fondos</a></li>
+            <li><a class="nav-link" href="#Bordes">Bordes</a></li>
+            <li><a class="nav-link" href="#Flujos_de_escritura">Flujos de escritura</a></li>
+            <li><a class="nav-link" href="#Hidden">Hidden</a></li>
+            <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <p>
+                    Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos
+                    utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios
+                    languages basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el
+                    elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
+
+
+                </p>
+                <p>
+                    CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte
+                    del W3C. Anteriormente , el desarrollo de varias partes de las especificaciones de CSS era realizado
+                    de manera sincrónica, lo que permiía el versionado de las recomendaciones.Probablemente habrás
+                    escuchado acerca de CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una versión
+                    oficial.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="¿Qué_necesitas_para_empezar_con_css?">
+            <header>¿Qué necesitas para empezar con css?</header>
+            <article>
+                <ul>
+                    <li>Conocimientos generales de HTML</li>
+                    <li>Entender los conceptos de elementos en línea y bloque</li>
+                    <li>Tener una computadora con acceeso a internet</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Selectores">
+            <header>Selectores</header>
+            <article>
+                <p>
+                    Hay una gran variedad de selectores disponibles en CSS, permitiendo una fina precision para
+                    seleccionar elementos de estilo. En esta seccion y sub-artículos, repasaremos los diferentes tipos
+                    en detalle y veremos como funcionan. Los sub-artículos son los que siguinetes :
+                </p>
+
+                <p>
+                    Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que
+                    indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los
+                    valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se
+                    denominan sujeto del selector.
+                </p>
+                <p>
+                    En CSS, los selectores se definen en la especificación de selectores de CSS correspondiente; al
+                    igual que cualquier otro elemento de CSS, es necesario que los navegadores los admitan para que
+                    funcionen. La mayoría de los selectores que encontrarás se definen en especificación de nivel 3 de
+                    selectores, que es una especificación consolidada y, por lo tanto, la mayoría de navegadores
+                    admitirán esos selectores.
+                </p>
+                <h2>Algunos selectores son</h2>
+                <code>
+                        h1 {
+                        color: blue;
+                        }
+                      <br>
+                      .special {
+                        color: blue;
+                        } 
+                        <br>
+                        h1, .special {
+                            color: blue;
+                        }     
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Modelo_de_cajas">
+            <header>Modelo de cajas</header>
+            <p>
+                Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS
+                o para alinear elementos con otros elementos. En esta seccion, echaremos un vistazo más de cerca al
+                modelo de cajas en CSS con el que vas a poder crear diseños de compaginación más complejos con una
+                comprensión de cómo funciona y la terminología relacionada.
+            </p>
+            <p>
+                En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea. Estas características se
+                refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras cajas
+                de la página:
+            </p>
+        </section>
+        <section class="main-section" id="Fondos">
+            <header>Fondos</header>
+            <h2>Aplicar estilo a los fondos</h2>
+            <p>
+                La propiedad background de CSS es una propiedad abreviada de una serie de propiedades de fondo que vamos
+                a ver en esta seccion. Si descubres una propiedad de fondo compleja en una hoja de estilo, puede parecer
+                un poco difícil de entender porque pueden estarse pasando muchos valores a la vez.
+            </p>
+            <code>
+                .box {
+                    background: linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+                    url(big-star.png) center no-repeat, rebeccapurple;
+                    } 
+            </code>
+            <h3>Los colores de fondo</h3>
+            <p>
+                La propiedad background-color define el color de fondo de cualquier elemento en CSS. La propiedad admite
+                cualquier <code><color></code> válido. Un color de fondo (background-color) se extiende por debajo del
+                contenido y el relleno del elemento.
+
+                En el ejemplo siguiente hemos utilizado varios valores de color para añadir un color de fondo a la caja,
+                a un encabezado y a un elemento <code><span></code>.
+
+                Juega un poco con ellos; usa cualquier valor <code><color></code>disponible.
+            </p>
+            <code>
+                .box {
+                    background-color: #567895;
+                  }
+                  <br>
+                  h2 {
+                    background-color: black;
+                    color: white;
+                  }
+                  <br>
+                  span {
+                    background-color: rgba(255,255,255,.5);
+                  }
+            </code>
+        </section>
+        <section class="main-section" id="Imagenes_como_fondos">
+            <header>Imagenes como fondos</header>
+            <p>
+                La propiedad background-image permite visualizar una imagen de fondo en un elemento.
+            </p>
+            <code>
+                .a {
+                    background-image: url(balloons.jpg);
+                  }
+                <br>  
+                .b {
+                    background-image: url(star.png);
+                  }     
+            </code>
+            <h3>Propiedades de background</h3>
+            <p>
+            <ul>
+                <li><code>no-repeat</code>:evita que el fondo se repita.</li>
+                <li><code>repeat-x</code>:repite horizontalmente.</li>
+                <li><code>repeat-y</code>:repite verticalmente.</li>
+                <li><code>repeat</code>:es el valor por defecto repite en ambas direcciones.</li>
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Bordes">
+            <header>Bordes</header>
+            <p>
+                Al aprender sobre el modelo de cajas descubrimos cómo los bordes afectan al tamaño de nuestra caja. En
+                esta seccion veremos cómo usar los bordes de una manera creativa. Por lo general, cuando a un elemento
+                le añadimos bordes con CSS, usamos una propiedad abreviada que establece el color, el ancho y el estilo
+                del borde en una línea de CSS.
+                En el siguiente ejemplo se aprecia como poder poner borde a todos los lados de la caja
+            </p>
+            <code>
+                    .box {
+                        border: 1px solid black;
+                    } 
+                </code>
+        </section>
+        <section class="main-section" id="Flujos_de_escritura">
+            <header>Flujos de escritura</header>
+            <p>
+                Muchas de las propiedades y valores que hemos encontrado hasta ahora en nuestro aprendizaje de CSS han
+                estado ligadas a las dimensiones físicas de nuestra pantalla. Creamos bordes arriba, a la derecha, abajo
+                y a la izquierda de una caja, por ejemplo. Estas dimensiones físicas se ajustan adecuadamente al
+                contenido que se visualiza de forma horizontal, y por defecto, la web tiende a apoyar lenguajes de
+                izquierda a derecha, como el castellano o el francés, mejor que aquellos que se escriben de derecha a
+                izquierda, como el árabe.
+            </p>
+            <p>
+                Sin embargo, en los últimos años, CSS ha evolucionado para soportar de mejor forma contenidos en
+                diferente direccionalidad, incluyendo contenido de derecha a izquierda, pero también de arriba-abajo,
+                como el japonés - Estas direccionalidades se llaman modos de escritura. En la medida que progresa tu
+                estudio y comiences a trabajar con diseños, comprender los modos de escritura será de mucha utilidad
+                para ti, por ello los explicaremos a continuación.
+            </p>
+            <article>
+                <p>
+                    Un modo de escritura en CSS se refiere a si el texto está escrito horizontal o verticalmente. La
+                    propiedad writing-mode permite cambiar de un modo a otro. No necesitas estar trabajando en un
+                    lenguaje que use un modo de escritura vertical para querer hacer esto - Podrías cambiar el modo de
+                    escritura de partes de tu diseño por razones creativas.
+                </p>
+                <code>
+                    h1 {
+                        writing-mode: vertical-rl;
+                    }                      
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Hidden">
+            <header>Hidden</header>
+            <h2>¿Qué es el desbordamiento de contenido?</h2>
+            <p>
+                Ya sabemos que todo en CSS está dentro de una caja, y que podemos restringir el tamaño de estas cajas
+                asignándoles los valores width y height (o inline-size y block-size). El desbordamiento es lo que sucede
+                cuando hay demasiado contenido en una caja, y no cabe cómodamente en ella. El CSS te proporciona varias
+                herramientas para administrar este desbordamiento, y además es un concepto que resulta útil de conocer
+                desde las primeras etapas. Te encontrarás con situaciones de desbordamiento con bastante frecuencia al
+                escribir CSS, especialmente cuando profundices en compaginación con CSS.
+            </p>
+            <p>Para evitar que el contenido se desborde de su contenedor o caja, para eso exite la propiedad
+                <code>hidden</code></p>
+            <code>
+                <div class="box">This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.</div>
+                <p>This content is outside of the box.</p>
+            </code>
+            <code>
+                .box {
+                    border: 1px solid #333333;
+                    width: 200px;
+                    height: 100px;
+                    overflow: hidden;
+                  }                  
+            </code>
+        </section>
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <article>
+                <ul>
+                    <li>
+                        Toda la documentacion fue sacada de
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS" target="_blank">MDN</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
