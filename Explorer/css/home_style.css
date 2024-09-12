@@ -37,7 +37,7 @@ header > div >#btn_menu{
 }
 
 
-/*Con esto tendria que quedar el menu desplegable, pero pues no queda :,v  */
+/*Con esto tendria que quedar el menu desplegable, pero no queda bien */
 /* header > div > label#btn_menu:checked{
     margin: 0;
 } */
@@ -159,11 +159,6 @@ footer > ul.media{
     }
     
     nav{
-        /*  */
-        /*  */
-        /* display: none; */
-        /*  */
-        /*  */
         flex-direction: column;
         position: absolute;
         right: 0;
@@ -297,7 +292,7 @@ footer > ul.media{
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1400px){
+@media screen and (min-width:992px){
     header{
         display: flex;
         justify-content: space-between;
